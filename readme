@@ -1,0 +1,5 @@
+This repository contains a number of different codes to automatically find optimal parameters for different kinds of aquifer puming tests.  Three coding languages are provided here: R, python, and matlab. Within each language folder, there are several examples including data from a different test.  All tests are described in the paper listed below.  Please cite the paper if you use these codes.  Also please notify the corresponding author (dbenson@mines.edu) if you make modifications to the code(s).
+The codes are constructed with readability as the directing principle.  Modifications for speed will be simple for adept coders: CPU and parallel implementations are straightforward.
+
+Citation:
+Benson, D. A. and O. Noyes (2022), Automated estimation of aquifer parameters and/or nonlinear well losses using all data and arbitrary-rate pumping tests, including codes in Python, Matlab, and R, submitted.
