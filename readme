@@ -8,7 +8,7 @@ Or, if you use ssh:
 git clone git@github.com/dbenson5225/pump-test-analysis.git
 Then change directory by cd pump-test-analysis and you will see the three language directories.  The entire directory structure should be cloned into your parent directory.
 If this doesn't work, just "clone" the whole repository using the green button above.
-To use the matlab, python, or R codes, a current version of matlab, python3, or R are required. On a mac, these are most easilty installed by first installing ``homebrew'', found at https://brew.sh/.  Then from the command line it is usually sufficeint to type ``brew install python3'' or the equivalent.  Or just search for a given package on the homebrew site.
+To use the matlab, python, or R codes, a current version of matlab, python3, or R are required. On a mac, these are most easily installed by first installing ``homebrew'', found at https://brew.sh/.  Then from the command line it is usually sufficeint to type ``brew install python3'' or the equivalent.  Or just search for a given package on the homebrew site.
 To use, for example, the python code for the ET_1 test, change into that directory (e.g., type cd python/ET1_step_test).  At the command line type python3 step_test.py and that test should be analyzed automatically (in about a minute). Remember to close the figures to get back to the command prompt.
 To change to your data, edit the python code in an ascii editor such as TextEdit or notepad. You will need to supply your drawdown in a separate file and the Q history in a separate file.
 The matlab and R codes are best edited and run within the interactive environments supplied with those programming platforms.
