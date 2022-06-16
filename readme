@@ -1,6 +1,18 @@
-This repository contains a number of different codes to automatically find optimal parameters for different kinds of aquifer pumping tests.  Three coding languages are provided here: R, python, and matlab. Within each language folder, there are several examples, each including data from a different test.  All tests are described in the paper listed below.  Please cite the paper if you use these codes.  Also please notify the corresponding author (dbenson@mines.edu) if you make modifications to the code(s).
-The codes are constructed with readability as the directing principle.  Modifications for speed will be simple for adept coders: CPU and parallel implementations are straightforward.
-The matlab codes require that a separate file contains the function for calculating the model drawdowns and comparing to observed data.  This function is called from a main program (which has the word "main" in the filename).  For python, there is only one file (ending with .py) that needs to be run in the python environment.  In R, ... 
+This repository contains a number of different codes to automatically find optimal parameters for different kinds of aquifer pumping tests.  Three coding languages are provided here: R, python, and matlab. Within each language folder, there are several examples, each including data from a different test.  All tests are described in the paper listed below.  Please cite the paper if you use these codes.  Also please notify the corresponding author (dbenson@mines.edu) if you wish to make modifications to the code(s).
+The codes are constructed with readability as the overarching principle.  Modifications for speed will be simple for adept coders: i.e., parallel implementations are straightforward.
+The matlab codes require that a separate .m file contains the function for calculating the model drawdowns and comparing to observed data.  This function is called from a main program (which has the word "main" in the filename).  For python, there is only one file (ending with .py) that needs to be run in the python environment.  In R, ... 
+The procedure for use is to clone this entire repository onto your machine. Open a terminal or command prompt and create (and move into) parent directory (folder) in which to clone verything. If you, the user, has git installed on your machine, it should be sufficient to type the following on the command line (or terminal on a mac):
+If you use https:
+git clone https://github.com/dbenson5225/pump-test-analysis.git
+Or, if you use ssh:
+git clone git@github.com/dbenson5225/pump-test-analysis.git
+cd cpp_particleCode
+The entire directory structure should be cloned into your parent directory.
+If this doesn't work, just "clone" the whole repository using the green button above.
+To use the matlab, python, or R codes, a current version of matlab, python3, or R are required. On a mac, these are most easilty installed by first installing ``homebrew'', found at https://brew.sh/.  Then from the command line it is usually sufficeint to type ``brew install python3'' or the equivalent.  Or just search for a given package on the homebrew site.
+To use, for example, the python code for the ET_1 test, change into that directory (e.g., type cd python/ET1_step_test).  At the command line type python3 step_test.py
+To change to your data, edit the python code in an ascii editor such as TextEdit or notepad. You will need to supply your drawdown in a separate file and the Q history in a separate file.
+The matlab and R codes are best edited and run within the interactive environments supplied with those programming platforms.
 
 Citation:
-Benson, D. A. and O. Noyes (2022), Automated estimation of aquifer parameters and/or nonlinear well losses using all data and arbitrary-rate pumping tests, including codes in Python, Matlab, and R, submitted.
+Benson, D. A. and ??? (2022), Automated estimation of aquifer parameters and/or nonlinear well losses using all data and arbitrary-rate pumping tests, including codes in Python, Matlab, and R, submitted.
